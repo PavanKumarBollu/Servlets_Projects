@@ -28,25 +28,12 @@ public class ServletContextObject extends HttpServlet {
 			Enumeration<String> paramNames = context.getInitParameterNames();
 			while(paramNames.hasMoreElements())
 			{
-				String paramName = paramNames.nextElement();
-				String paramValue = getInitParameter(paramName);
+				String paramName = (String) paramNames.nextElement();
+				String paramValue = context.getInitParameter(paramName);
 				out.println("<p> Param Name : " + paramName + "\t Param value : "+paramValue );
 			}
 			
-			
-		
-		
-		// 2nd Ways
-			out.println("<h1> context params using cotext object </h1>");
-		ServletContext contextDirect = getServletContext();
-		Enumeration<String> dpNames = contextDirect.getInitParameterNames();
-		while(dpNames.hasMoreElements())
-		{
-			String paramName = dpNames.nextElement();
-			String paramValue = getInitParameter(paramName);
-			out.println("<p> Param Name : " + paramName + "\t Param value : "+paramValue );
-		}
-		out.close();
+			out.close();
 		
 	}
 

@@ -31,4 +31,14 @@
     <servlet-name>ServletContextObject</servlet-name>
     <url-pattern>/sco</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletObjectUsingCotext</display-name>
+    <servlet-name>ServletObjectUsingCotext</servlet-name>
+    <servlet-class>com.pavan.controler.ServletObjectUsingCotext</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletObjectUsingCotext</servlet-name>
+    <url-pattern>/souc</url-pattern>
+  </servlet-mapping>
 </web-app>
