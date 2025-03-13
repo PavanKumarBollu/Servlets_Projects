@@ -29,6 +29,10 @@
 			<param-name>uPassword</param-name>
 			<param-value>Pav@0211</param-value>
 		</init-param>
+		<init-param>
+			<param-name>dbType</param-name>
+			<param-value>MySql</param-value>
+		</init-param>
 
 	</servlet>
 	<servlet-mapping>

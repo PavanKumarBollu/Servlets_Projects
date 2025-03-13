@@ -17,8 +17,8 @@ public class ConfigObject extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 		
-		out.println("<html><head><title>Initialization Parameters</title><head>");
-		out.println("<body><h1 style = 'text-align:center;'>Initialization parameters </h1>");
+		out.println("<html><head><title>Initialization Parameters </title><head>");
+		out.println("<body><h1 style = 'text-align:center;'>Initialization parameters Using the Xml Approach </h1>");
 		out.println("<table border= 2 align ='center'> ");
 		out.println("<tr><th>ParameterName</th><th>ParameterValue</th></tr>");
 		
