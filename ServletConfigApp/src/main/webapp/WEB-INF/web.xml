@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>ServletConfigApp</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>ConfigObject</display-name>
+		<servlet-name>ConfigObject</servlet-name>
+		<servlet-class>com.pavan.controler.ConfigObject</servlet-class>
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:mysql://localhost/studentdb</param-value>
+		</init-param>
+		<init-param>
+			<param-name>uName</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		<init-param>
+			<param-name>uPassword</param-name>
+			<param-value>Pav@0211</param-value>
+		</init-param>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConfigObject</servlet-name>
+		<url-pattern>/co</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
